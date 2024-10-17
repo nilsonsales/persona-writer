@@ -19,7 +19,7 @@ categories = {
         "Barack Obama",
         "Donald Trump",
         "Joe Biden",
-        "Kamal Harris",
+        "Kamala Harris",
         "Emanuel Macron",
         "Marine Le Pen",
         "Jean-Luc Meunier",
@@ -67,9 +67,13 @@ def rewrite_text(persona: str, text: str):
 
     # Call to Gemini API (pseudo-code, replace with actual call)
     model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content(system_prompt)
+    try:
+        response = model.generate_content(system_prompt)
 
-    return response.text
+        return response.text
+    except Exception as e:
+        print(f"Error: {e}")
+        return "Sorry, but I can't rewrite your text as a public figure."
 
 
 # Choose the category
