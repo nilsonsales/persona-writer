@@ -22,6 +22,7 @@ categories = {
         "Ciro Gomes",
         "Dilma Rouseff",
         "Marina Silva",
+        "Sergio Moro",
     ],
     "Public Figures": [
         "Elon Musk",
@@ -96,7 +97,7 @@ if st.button("Rewrite"):
         if persona and text:
             rewritten_text = rewrite_text(client, persona, text)
             st.write(rewritten_text)
-            
+
         else:
             st.warning(
                 "Please select a name from the list and enter the text you want to rewrite."
