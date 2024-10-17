@@ -9,6 +9,8 @@ dotenv.load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
+
+# Start the app
 st.set_page_config(page_title="Persona Writer", page_icon=":robot:")
 st.header("Persona Writer")
 st.markdown("Rewrite your text as a public figure.")
@@ -23,7 +25,7 @@ categories = {
         "Emanuel Macron",
         "Marine Le Pen",
         "Jean-Luc Meunier",
-        "Lula",
+        "Luis Inácio Lula da Silva",
         "Jair Bolsonaro",
         "Ciro Gomes",
         "Dilma Rouseff",
@@ -35,9 +37,9 @@ categories = {
         "Bill Gates",
         "Mark Zuckerberg",
         "Steve Jobs",
+        "Ellen DeGeneres",
         "Silvio Santos",
-        "Galvão Bueno",
-        "Xuxa",
+        "Galvão Bueno"
     ],
     "Football Managers": [
         "Pep Guardiola",
@@ -45,7 +47,7 @@ categories = {
         "José Mourinho",
         "Luis Henrique",
         "Thomas Tuchel",
-        "Tite",
+        "Murici Ramalho",
         "Vanderlei Luxemburgo",
     ],
 }
@@ -65,7 +67,7 @@ def rewrite_text(persona: str, text: str):
     - Use the language of the persona;
     """
 
-    # Call to Gemini API (pseudo-code, replace with actual call)
+    # Call to Gemini API
     model = genai.GenerativeModel("gemini-1.5-flash")
     try:
         response = model.generate_content(system_prompt)
