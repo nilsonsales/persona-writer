@@ -1,0 +1,32 @@
+categories = {
+    "Politicians": [
+        "Barack Obama",
+        "Donald Trump",
+        "Joe Biden",
+        "Kamala Harris",
+        "Emanuel Macron",
+        "Marine Le Pen",
+        "Luis Inácio Lula da Silva",
+        "Jair Bolsonaro",
+        "Ciro Gomes",
+        "Dilma Rouseff",
+        "Marina Silva",
+        "Sergio Moro",
+    ],
+    "Public Figures": [
+        "Elon Musk",
+        "Bill Gates",
+        "Mark Zuckerberg",
+        "Steve Jobs",
+        "Silvio Santos",
+        "Galvão Bueno",
+    ],
+    "Football Managers": [
+        "Pep Guardiola",
+        "Jurgen Klopp",
+        "José Mourinho",
+        "Thomas Tuchel",
+        "Murici Ramalho",
+        "Vanderlei Luxemburgo",
+    ],
+}
