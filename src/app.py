@@ -4,6 +4,8 @@ import google.generativeai as genai
 import dotenv
 import os
 
+from categories import categories
+
 # Load the Gemini API key from .env
 dotenv.load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -14,43 +16,6 @@ genai.configure(api_key=GEMINI_API_KEY)
 st.set_page_config(page_title="Persona Writer", page_icon=":robot:")
 st.header("Persona Writer")
 st.markdown("Rewrite your text as a public figure.")
-
-
-categories = {
-    "Politicians": [
-        "Barack Obama",
-        "Donald Trump",
-        "Joe Biden",
-        "Kamala Harris",
-        "Emanuel Macron",
-        "Marine Le Pen",
-        "Jean-Luc Meunier",
-        "Luis Inácio Lula da Silva",
-        "Jair Bolsonaro",
-        "Ciro Gomes",
-        "Dilma Rouseff",
-        "Marina Silva",
-        "Sergio Moro",
-    ],
-    "Public Figures": [
-        "Elon Musk",
-        "Bill Gates",
-        "Mark Zuckerberg",
-        "Steve Jobs",
-        "Ellen DeGeneres",
-        "Silvio Santos",
-        "Galvão Bueno"
-    ],
-    "Football Managers": [
-        "Pep Guardiola",
-        "Jurgen Klopp",
-        "José Mourinho",
-        "Luis Henrique",
-        "Thomas Tuchel",
-        "Murici Ramalho",
-        "Vanderlei Luxemburgo",
-    ],
-}
 
 
 def rewrite_text(persona: str, text: str):
