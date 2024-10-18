@@ -2,7 +2,6 @@ import streamlit as st
 import google.generativeai as genai
 import dotenv
 import os
-import random
 
 from categories import categories
 
@@ -52,16 +51,14 @@ def rewrite_text(persona: str, text: str):
 # Choose the category
 category = st.selectbox(
     "Select a category",
-    list(categories.keys()),
-    index=random.randint(0, len(categories) - 1),
+    list(categories.keys())
 )
 personas_list = categories[category]
 
 # Ask for a name from the list
 persona = st.selectbox(
     "Select a name from the list",
-    personas_list,
-    index=random.randint(0, len(personas_list) - 1),
+    personas_list
 )
 
 # Ask for a text
