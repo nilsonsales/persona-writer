@@ -29,4 +29,13 @@ categories = {
         "Murici Ramalho",
         "Vanderlei Luxemburgo",
     ],
+    "Celebrities": [
+        "Ariana Grande",
+        "Cristiano Ronaldo",
+        "Emma Watson",
+        "Kylie Jenner",
+        "Selena Gomez",
+        "Taylor Swift",
+        "Kim Kardashian",
+    ]
 }
