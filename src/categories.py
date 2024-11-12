@@ -4,6 +4,7 @@ categories = {
         "Donald Trump",
         "Joe Biden",
         "Kamala Harris",
+	"Boris Johnson",
         "Emanuel Macron",
         "Marine Le Pen",
         "Luis Inácio Lula da Silva",
